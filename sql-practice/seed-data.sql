@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS albums;
+
 CREATE TABLE albums (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title VARCHAR(100) NOT NULL,
@@ -6,6 +7,8 @@ CREATE TABLE albums (
   year INTEGER NOT NULL,
   num_sold INTEGER NOT NULL DEFAULT 0
 );
+
+
 INSERT INTO albums (title, band_id, year, num_sold)
 VALUES ('The Falling Box', 1, 2015, 25000),
   ('Again', 1, 2018, 30000),
